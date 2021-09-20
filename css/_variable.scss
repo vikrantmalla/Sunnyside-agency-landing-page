@@ -1,0 +1,40 @@
+    /*Primary */
+    
+    $colorSoftred: hsl(7, 99%, 70%);
+    $colorYellow: hsl(51, 100%, 49%);
+    $colorDarkdesaturatedcyan: hsl(167, 40%, 24%);
+    $colorDarkblue: hsl(198, 62%, 26%);
+    $colorDarkmoderatecyan: hsl(168, 34%, 41%);
+    /*Neutral */
+    
+    $colorVerydarkdesaturatedblue: hsl(212, 27%, 19%);
+    $colorVerydarkgrayishblue: hsl(213, 9%, 39%);
+    $colorDarkgrayishblue: hsl(232, 10%, 55%);
+    $colorGrayishblue: hsl(210, 4%, 67%);
+    $colorWhite: hsl(0, 0%, 100%);
+    @mixin flex($direction, $justify) {
+        display: flex;
+        flex-direction: $direction;
+        justify-content: $justify;
+        align-items: center;
+    }
+    
+    h1 {
+        font-family: 'Fraunces', serif;
+        font-weight: 900;
+    }
+    
+    h2 {
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+    }
+    
+    p {
+        font-family: 'Barlow', sans-serif;
+        font-weight: 600;
+    }
+    
+    a {
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+    }

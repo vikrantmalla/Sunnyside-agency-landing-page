@@ -1,0 +1,196 @@
+.secondary {
+    .showcase1 {
+        @include flex(column, center);
+        background-color: $colorWhite;
+        .text {
+            width: 80%;
+            margin: 4.3rem 0;
+            text-align: center;
+            h2 {
+                margin-bottom: 1.5rem;
+                font-size: 2rem;
+            }
+            p {
+                color: $colorGrayishblue;
+                font-size: 1.1rem;
+                margin-bottom: 1.5rem;
+                line-height: 1.6rem;
+            }
+            a {
+                color: $colorVerydarkdesaturatedblue;
+                text-transform: uppercase;
+                position: relative;
+                z-index: 1;
+                cursor: pointer;
+            }
+        }
+    }
+    .brand {
+        flex-direction: column-reverse;
+        .egg-image {
+            width: 100%;
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+        a {
+            &::after {
+                content: '';
+                width: 115%;
+                height: 8px;
+                background-color: $colorYellow;
+                opacity: .5;
+                position: absolute;
+                top: 12px;
+                left: -7px;
+                z-index: -1;
+                border-radius: 5px;
+            }
+        }
+    }
+    .audience {
+        .audience-image {
+            width: 100%;
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+        a {
+            &::after {
+                content: '';
+                width: 115%;
+                height: 8px;
+                background-color: $colorSoftred;
+                opacity: .5;
+                position: absolute;
+                top: 12px;
+                left: -7px;
+                z-index: -1;
+                border-radius: 5px;
+            }
+        }
+    }
+    .service {
+        @include flex(column, center);
+        text-align: center;
+        width: 100%;
+        height: 600px;
+        .showcase2 {
+            @include flex(row, center);
+            align-items: flex-end;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            padding-bottom: 60px;
+            .text {
+                h2 {
+                    margin: 1rem;
+                }
+                p {
+                    max-width: 340px;
+                    line-height: 25px;
+                }
+            }
+        }
+        .graphic-design {
+            background-image: url(../images/desktop/image-graphic-design.jpg);
+            height: 100vh;
+            .text {
+                h2 {
+                    color: $colorDarkdesaturatedcyan;
+                }
+                p {
+                    color: $colorDarkdesaturatedcyan;
+                }
+            }
+        }
+        .photography {
+            background-image: url(../images/desktop/image-photography.jpg);
+            height: 100vh;
+            .text {
+                h2 {
+                    color: $colorDarkblue;
+                }
+                p {
+                    color: $colorDarkblue;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .secondary {
+        .showcase1 {
+            @include flex(row, center);
+            .text {
+                width: 50%;
+                margin: 4.3rem 0;
+                padding: 1rem 4rem;
+                text-align: left;
+                h2 {
+                    margin-bottom: 1.5rem;
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1.1rem;
+                    margin-bottom: 1.5rem;
+                    line-height: 1.6rem;
+                }
+            }
+        }
+        .brand {
+            .egg-image {
+                width: 50%;
+                img {
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+        .audience {
+            .audience-image {
+                width: 50%;
+                img {
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+        .service {
+            @include flex(row, center);
+            text-align: center;
+            width: 100%;
+            height: 600px;
+            .showcase2 {
+                @include flex(row, center);
+                align-items: flex-end;
+                width: 50%;
+                height: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                padding-bottom: 60px;
+                .text {
+                    h2 {
+                        margin: 1rem;
+                    }
+                    p {
+                        max-width: 340px;
+                        line-height: 25px;
+                    }
+                }
+            }
+            .graphic-design {
+                background-image: url(../images/desktop/image-graphic-design.jpg);
+            }
+            .photography {
+                background-image: url(../images/desktop/image-photography.jpg);
+            }
+        }
+    }
+}

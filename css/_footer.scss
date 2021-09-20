@@ -1,0 +1,43 @@
+.gallery {
+    @include flex(row, center);
+    flex-wrap: wrap;
+    img {
+        width: 50%;
+        height: 18rem;
+    }
+}
+
+footer {
+    @include flex(column, center);
+    background-color: $colorDarkdesaturatedcyan;
+    padding: 70px;
+    .logo {
+        margin-bottom: 2.5rem;
+    }
+    .footer-link {
+        @include flex(row, center);
+        gap: 1rem;
+        a {
+            text-decoration: none;
+            color: $colorDarkmoderatecyan;
+            margin-bottom: 5rem;
+            font-size: 1.1rem;
+            font-family: 'Barlow', sans-serif;
+            font-weight: 600;
+        }
+    }
+    .social-link {
+        @include flex(row, center);
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .gallery {
+        @include flex(row, center);
+        img {
+            width: 25%;
+            height: auto;
+        }
+    }
+}
