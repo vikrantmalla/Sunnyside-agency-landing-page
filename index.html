@@ -102,10 +102,22 @@
             </div>
         </section>
         <section class="gallery">
-            <img src="images/desktop/image-gallery-milkbottles.jpg" alt="milk">
-            <img src="images/desktop/image-gallery-orange.jpg" alt="orange">
-            <img src="images/desktop/image-gallery-cone.jpg" alt="cone">
-            <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="sugar">
+            <picture>
+                <source media="(max-width: 480px)" srcset="images/mobile/image-gallery-milkbottles.jpg">
+                <img src="images/desktop/image-gallery-milkbottles.jpg" alt="milk">
+            </picture>
+            <picture>
+                <source media="(max-width: 480px)" srcset="images/mobile/image-gallery-orange.jpg">
+                <img src="images/desktop/image-gallery-orange.jpg" alt="orange">
+            </picture>
+            <picture>
+                <source media="(max-width: 480px)" srcset="images/mobile/image-gallery-cone.jpg">
+                <img src="images/desktop/image-gallery-cone.jpg" alt="cone">
+            </picture>
+            <picture>
+                <source media="(max-width: 480px)" srcset="images/mobile/image-gallery-sugar-cubes.jpg">
+                <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="cubes">
+            </picture>
         </section>
         <footer>
             <div class="logo">
@@ -120,19 +132,15 @@
             <div class="social-link">
                 <img src="./images/icon-facebook.svg">
                 <img src="./images/icon-instagram.svg">
+                <img src="./images/icon-twitter.svg">
                 <img src="./images/icon-pinterest.svg">
+            </div>
+            <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/vikrantmalla">Vikrant Malla</a>.
             </div>
         </footer>
     </main>
-
     <script src="./main.js"></script>
-
-    <!--
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/vikrantmalla">Vikrant Malla</a>.
-    </div>
-  -->
-
 </body>
 
 </html>

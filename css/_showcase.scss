@@ -47,6 +47,9 @@
                 z-index: -1;
                 border-radius: 5px;
             }
+            &:hover::after {
+                opacity: 1;
+            }
         }
     }
     .audience {
@@ -69,6 +72,9 @@
                 left: -7px;
                 z-index: -1;
                 border-radius: 5px;
+            }
+            &:hover::after {
+                opacity: 1;
             }
         }
     }
