@@ -74,7 +74,7 @@ header {
         padding: 2.1rem 2.5rem 325px;
         background: center/cover no-repeat url(../images/desktop/image-header.jpg);
         .logo-wrap {
-            margin-top: .6rem;
+            margin-top: 0;
             img {
                 width: 170px;
             }
@@ -109,6 +109,7 @@ header {
             }
             li a {
                 color: $colorWhite;
+                font-size: 1rem;
                 &:hover {
                     color: darken($colorWhite, 20%);
                 }
@@ -123,6 +124,19 @@ header {
         h1 {
             font-size: 3.75rem;
             margin-bottom: 5.6rem;
+        }
+    }
+}
+
+@media (min-width: 1397px) {
+    header {
+        padding: 2.1rem 2.5rem 320px;
+    }
+    .main-menu {
+        ul {
+            li:last-child a {
+                padding: 1rem 1.5rem;
+            }
         }
     }
 }

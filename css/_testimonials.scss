@@ -2,7 +2,7 @@
     @include flex(column, center);
     background-color: $colorWhite;
     text-align: center;
-    margin: 4.3rem auto;
+    margin: 6rem auto;
     h2 {
         margin-bottom: 3.7rem;
         color: $colorGrayishblue;
@@ -113,6 +113,23 @@
                         font-weight: 600;
                         margin-top: .8rem;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1397px) {
+    .testimonials {
+        margin: 10rem auto;
+        h2 {
+            font-size: 1.5rem;
+        }
+        .testimonials-container {
+            width: 80%;
+            .testimonials-card {
+                p {
+                    font-size: 1.2rem;
                 }
             }
         }

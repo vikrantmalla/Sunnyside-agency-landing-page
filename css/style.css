@@ -118,7 +118,7 @@ header .menu-wrap {
     background: center/cover no-repeat url(../images/desktop/image-header.jpg);
   }
   header .logo-wrap {
-    margin-top: .6rem;
+    margin-top: 0;
   }
   header .logo-wrap img {
     width: 170px;
@@ -160,6 +160,7 @@ header .menu-wrap {
   }
   .main-menu ul li a {
     color: white;
+    font-size: 1rem;
   }
   .main-menu ul li a:hover {
     color: #cccccc;
@@ -173,6 +174,15 @@ header .menu-wrap {
   .banner-wrap h1 {
     font-size: 3.75rem;
     margin-bottom: 5.6rem;
+  }
+}
+
+@media (min-width: 1397px) {
+  header {
+    padding: 2.1rem 2.5rem 320px;
+  }
+  .main-menu ul li:last-child a {
+    padding: 1rem 1.5rem;
   }
 }
 
@@ -459,6 +469,18 @@ header .menu-wrap {
   }
 }
 
+@media (min-width: 1397px) {
+  .secondary .showcase1 .text {
+    padding: 1rem 8rem;
+  }
+  .secondary .showcase1 .text h2 {
+    font-size: 2.5rem;
+  }
+  .secondary .service .showcase2 .text h2 {
+    font-size: 2rem;
+  }
+}
+
 .testimonials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -475,7 +497,7 @@ header .menu-wrap {
           align-items: center;
   background-color: white;
   text-align: center;
-  margin: 4.3rem auto;
+  margin: 6rem auto;
 }
 
 .testimonials h2 {
@@ -687,6 +709,21 @@ header .menu-wrap {
     font-family: 'Barlow', sans-serif;
     font-weight: 600;
     margin-top: .8rem;
+  }
+}
+
+@media (min-width: 1397px) {
+  .testimonials {
+    margin: 10rem auto;
+  }
+  .testimonials h2 {
+    font-size: 1.5rem;
+  }
+  .testimonials .testimonials-container {
+    width: 80%;
+  }
+  .testimonials .testimonials-container .testimonials-card p {
+    font-size: 1.2rem;
   }
 }
 

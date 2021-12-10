@@ -200,3 +200,25 @@
         }
     }
 }
+
+@media (min-width: 1397px) {
+    .secondary {
+        .showcase1 {
+            .text {
+                padding: 1rem 8rem;
+                h2 {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+        .service {
+            .showcase2 {
+                .text {
+                    h2 {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
